@@ -1,15 +1,55 @@
-# Project-Matdis1 🌐
+# Project Matdis 1 🌐
 
-**Project-Matdis1** adalah sebuah proyek berbasis HTML sederhana yang dibuat untuk memenuhi tugas atau latihan mata-kuliah matematika/distribusi (atau sesuai konteks kamu). Proyek ini menyajikan konten secara terstruktur agar mudah dibaca dan dipahami.
+**Project Matdis 1** adalah aplikasi web sederhana yang dibuat sebagai versi awal (early version) untuk membantu pengguna memproses kalimat proposisi dasar, seperti menghasilkan negasi dan bentuk invers dari suatu pernyataan. Proyek ini dikembangkan sebagai bagian dari pembelajaran Matematika Diskrit.
 
-## ✨ Tujuan & Latar Belakang
+## 🚀 Akses Aplikasi (Versi Awal)
 
-- 🎯 **Tujuan**: Membantu pengguna — terutama mahasiswa — mengakses materi matematika/distribusi secara simpel lewat browser, sehingga lebih fleksibel dibandingkan catatan tertulis.  
-- 📚 **Latar belakang**: Dalam lingkungan pendidikan pondok pesantren (atau lainnya) kadang akses materi digital masih minim; proyek ini berupaya menyediakan alternatif materi dalam format web statis, supaya bisa diakses di mana saja tanpa instalasi kompleks.  
+Klik link berikut untuk mencoba aplikasi:  
+👉 **https://superlative-parfait-959db8.netlify.app/**
 
-## 🔧 Fitur Utama
+Aplikasi ini berjalan langsung di browser tanpa instalasi apa pun.
 
-- Halaman web statis (HTML) — cukup buka lewat browser, tanpa server khusus.  
-- Struktur sederhana dan ringan — cocok untuk perangkat dengan spesifikasi rendah.  
-- Mudah diperluas / dikembangkan, misalnya menambah materi, gambar, atau referensi.  
-- Bisa dijadikan basis untuk proyek pembelajaran, dokumentasi materi, atau sebagai template web statis minimal.
+## 📌 Tentang Proyek
+
+Versi ini merupakan **rilis awal**, dengan fokus pada:
+
+- Tampilan sederhana dan mudah dipahami  
+- Input kalimat / proposisi  
+- Menampilkan bentuk **negasi** dan **invers** berdasarkan input pengguna  
+- Tanpa database dan tanpa fitur lanjutan
+
+Aplikasi masih akan terus dikembangkan pada versi-versi berikutnya.
+
+## 🔧 Teknologi yang Digunakan
+
+- **HTML** untuk struktur halaman  
+- **CSS** dasar untuk tampilan  
+- **JavaScript** untuk proses logika sederhana  
+- **Netlify** untuk hosting versi awal
+
+## 📂 Struktur Proyek
+
+```
+
+Project-Matdis1/
+│
+├── index.html      ← Halaman utama aplikasi
+├── (file lain akan ditambahkan di versi berikutnya)
+└── README.md
+
+```
+
+## 📝 Status Pengembangan
+
+- Ini adalah **versi awal (v1)**  
+- Versi baru (v2) bisa di akses di sini [Versi 2](https://github.com/HusainAziz2308/Project-Matdis2)
+- Fitur lanjutan akan ditambahkan pada versi itu
+
+## 📬 Kontak
+
+Developer: **Aziz Husain**  
+GitHub: https://github.com/HusainAziz2308
+
+## 📄 Lisensi
+
+Proyek ini bebas digunakan dan dikembangkan sesuai kebutuhan belajar.

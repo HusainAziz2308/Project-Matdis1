@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Kalkulator Logika Bahasa Natural</title>
+<style>
+    body {
+        font-family: Arial;
+        background: #f0f0f0;
+        padding: 20px;
+    }
+    .box {
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        max-width: 600px;
+        margin: auto;
+        box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+    input, textarea {
+        width: 100%;
+        padding: 12px;
+        margin-top: 10px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+    }
+    button {
+        padding: 10px 20px;
+        border: none;
+        background: #0077ff;
+        color: white;
+        border-radius: 8px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    button:hover {
+        background: #005fd4;
+    }
+    .result p {
+        background: #f8f8f8;
+        padding: 10px;
+        border-radius: 8px;
+        border-left: 4px solid #0077ff;
+    }
+</style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Aplikasi Logika Kalimat Natural</h2>
+
+    <label>Masukkan Kalimat (contoh: "Hari ini hujan dan basah"):</label>
+    <textarea id="kalimat" rows="3"></textarea>
+
+    <button onclick="proses()">Proses</button>
+    <button onclick="clearAll()">Clear</button>
+
+    <div id="hasil" class="result"></div>
+</div>
+
+<script>
+function proses() {
+    let teks = document.getElementById("kalimat").value.trim();
+    let hasil = document.getElementById("hasil");
+
+    if (!teks.includes(" dan ")) {
+        hasil.innerHTML = "<p style='color:red;'>Format harus mengandung kata 'dan'.</p>";
+        return;
+    }
+
+    // Pisahkan X dan Y
+    let parts = teks.split(" dan ");
+    let p = parts[0].trim();
+    let q = parts[1].trim();
+
+    // Bentuk kalimat logis
+    let implikasi = `Jika ${p}, maka ${q}.`;
+    let negasi = `${p} dan tidak ${q}.`;
+    let konvers = `Jika ${q}, maka ${p}.`;
+    let invers = `Jika tidak ${p}, maka tidak ${q}.`;
+    let kontrapos = `Jika tidak ${q}, maka tidak ${p}.`;
+
+    hasil.innerHTML = `
+        <h3>Hasil Proses</h3>
+        <p><strong>Proposisi p:</strong> ${p}</p>
+        <p><strong>Proposisi q:</strong> ${q}</p>
+        <p><strong>Implikasi (p → q):</strong> ${implikasi}</p>
+        <p><strong>Negasi:</strong> ${negasi}</p>
+        <p><strong>Konvers:</strong> ${konvers}</p>
+        <p><strong>Invers:</strong> ${invers}</p>
+        <p><strong>Kontraposisi:</strong> ${kontrapos}</p>
+    `;
+}
+
+function clearAll() {
+    document.getElementById("kalimat").value = "";
+    document.getElementById("hasil").innerHTML = "";
+}
+</script>
+
+</body>
+</html>
